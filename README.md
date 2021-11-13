@@ -24,18 +24,14 @@ The covariance matrix reveals that Hamburgers have the largest price variation (
 ## Defining the Problem in terms of PCs
 Principle Component Analysis is used to “explain the variance-covariance structure of a set of variables." It is considered a multidimensional data reduction technique. The number of PCs will be equal to the number of variables, in this case, 5. PCs are uncorrelated to each other, and their variances are as large as possible. PCA can be especially helpful when there is multicollinearity in the data. <b>There is multicollinearity in the current data</b>, as transportation, gas prices, subsidies, and seasons can all simultaneously affect food prices. PCs explain variation in descending order, such that the first PC “explains the maximum amount of variance possible with a linear combination”.  PCs are calculated using Eigenvalues and Eigenvectors, which are computed using the covariance matrix. 
 
-Eigenvalues are calculated using the covariance matrix in the formula | ∑ - λI | = 0, where: ∑ is the covariance matrix. 
-
-Eigenvectors are calculated using both the covariance matrix and a single Eigenvalue, such that ∑x = λ(k)x, where x =eigenvector. 
-
-The principle component formulas are as follows, where Y1 is the first principle component, and a11….a15, the eigenvectors, are as large as possible, subject to √(a112 + a122  +...+ a152 ) =1
-
-Y1=a11*Bread+a12*Hamburger+a13*Butter+a14*Apples + a15*Tomato 
-Y2=a21*Bread+a22*Hamburger+a23*Butter+a24*Apples + a25*Tomato
-Y3=a31*Bread+a32*Hamburger+a33*Butter+a34*Apples + a35*Tomato
-Y4=a41*Bread+a42*Hamburger+a43*Butter+a44*Apples + a45*Tomato
-Y5=a51*Bread+a52*Hamburger+a53*Butter+a54*Apples + a55*Tomato
-
+* Eigenvalues are calculated using the covariance matrix in the formula | ∑ - λI | = 0, where: ∑ is the covariance matrix. 
+* Eigenvectors are calculated using both the covariance matrix and a single Eigenvalue, such that ∑x = λ(k)x, where x =eigenvector. 
+* The principle component formulas are as follows, where Y1 is the first principle component, and a11….a15, the eigenvectors, are as large as possible, subject to √(a112 + a122  +...+ a152 ) =1
+* Y1=a11\*Bread+a12\*Hamburger+a13\*Butter+a14\*Apples + a15\*Tomato
+* Y2=a21\*Bread+a22\*Hamburger+a23\*Butter+a24\*Apples + a25\*Tomato
+* Y3=a31\*Bread+a32\*Hamburger+a33\*Butter+a34\*Apples + a35\*Tomato
+* Y4=a41\*Bread+a42\*Hamburger+a43\*Butter+a44\*Apples + a45\*Tomato
+* Y5=a51\*Bread+a52\*Hamburger+a53\*Butter+a54\*Apples + a55\*Tomato
 
 The variance of Hamburgers was the largest in the dataset. As such, we should expect that, being the first PC and having the most variation, the absolute value of a12 will be a large number, in order to magnify the variable with the largest variance. Using R, we calculate the eigenvalues and eigenvectors such that:
 
