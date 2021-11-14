@@ -58,9 +58,38 @@ By multiplying the food prices in each city by the eigenvectors in the equation 
 
 For PC2, a high price of Butter is associated with a low value of PC2. Kansas City has the lowest value of PC2, meaning it has the highest price of Butter. This is consistent with the original data, where Kansas City did have the highest butter prices. Buffalo has the highest value of PC1, meaning it has the lowest price of Butter. This is almost consistent with the original data, as Buffalo had the second lowest price of butter after Milwaukee. 
 
-Even though we will not be fully using PC3 in this analysis, it is somewhat helpful to interpret it. For PC3, a high price of Apples is associated with a high value of PC3. Kansas City has the lowest value of PC3, meaning it has the lowest prices of apples. This is close to the original data, however both Buffalo and Detroit had lower apple prices. Milwaukee has the highest value of PC3, meaning it has the highest price of Apples. This is different from the original data, as Anchorage, Chicago, Dallas, Honolulu, and San Fancisco all had higher prices of Apples than Milwaukee.
+Even though I will not be fully using PC3 in this analysis, it is somewhat helpful to interpret it. For PC3, a high price of Apples is associated with a high value of PC3. Kansas City has the lowest value of PC3, meaning it has the lowest prices of apples. This is close to the original data, however both Buffalo and Detroit had lower apple prices. Milwaukee has the highest value of PC3, meaning it has the highest price of Apples. This is different from the original data, as Anchorage, Chicago, Dallas, Honolulu, and San Fancisco all had higher prices of Apples than Milwaukee.
 
 There are a few discrepancies in the PCs and original data, with most of them being in PC3, which makes sense as it accounts for less variation of the data than PC1 and PC2. 
+
+## Variance Estimate Checks
+
+![](https://github.com/JaclynGlosson/PCA-on-Food-Prices/blob/187786f8041c233408395b36356198949aa5cff5/images/image42.png)
+
+<b>Property C: Check variance estimates of PCs vs Original X and other properties. </b>The last two PCs (0.08 and 0.05) are weaker than the percent variance explained in both the Apples and Tomato (0.16 and 0.12) variables, therefore they should be excluded.
+
+<b>Property D: eik is the importance of the ith variable Xk to the ith PC. Use cutoff (-0.5 or 0.5) </b>
+As 0.5 is an arbitrary cut off, I have examined some eigenvectors that are close to 0.5. Because PC1 explains a larger percent of the variance, I would include the Bread eigenvector in my interpretations, even though it is below the 0.5 threshold.
+
+<b>Property E: eik is proportional to correlation (Xi, Xk), p (Xi,Xk)</b>
+PC1: PC1 eigenvectors are indeed proportional to this correlation. The strongest correlation (-0.9) is associated with the most extreme eigenvector (-0.71) in the Hamburger row. The second strongest correlation (-0.79) is associated with the second most extreme eigenvector (-0.45), which is Bread. The weakest correlation (-0.38) is associated with the weakest eigenvectors (-0.22) which is Apples.
+
+![](https://github.com/JaclynGlosson/PCA-on-Food-Prices/blob/187786f8041c233408395b36356198949aa5cff5/images/image35.png)
+
+<b>Property G: Are they all uncorrelated?</b> Yes!
+
+![](https://github.com/JaclynGlosson/PCA-on-Food-Prices/blob/187786f8041c233408395b36356198949aa5cff5/images/image40.png)
+
+## Visual Plots and Interpretation
+Control Chart: PC1 against PC2: PC1 is High Priced Hamburger Sandwiches/ High priced food (High priced food is associated with a low X axis value, low priced food is associated with a high X axis value). PC2 is High Priced Butter (High priced butter is associated with a low Y axis value, low priced butter is associated with a high Y axis value) I can see clearly that both Anchorage and Honolulu have high priced hamburger sandwiches, as well as butter. Buffalo has low priced hamburger sandwiches and low priced butter. San Diego and Los Angeles have low priced hamburger sandwiches, but high priced butter.
+As discussed previously, the below scree plot demonstrates that Eigenvalues decrease in percent of variance explained (Red) while the variable Hamburgers accounts for the most percent variance in the variables (blue). The percent variance explained (red)is in a consistently sloping line, as expected. Note a large percent variance difference between PC1 and PC2, but a much smaller one between PC2 and PC3, justifying the use of just PC1 and PC2.
+
+![](https://github.com/JaclynGlosson/PCA-on-Food-Prices/blob/187786f8041c233408395b36356198949aa5cff5/images/image36.png)
+![](https://github.com/JaclynGlosson/PCA-on-Food-Prices/blob/187786f8041c233408395b36356198949aa5cff5/images/image54.png)
+
+
+
+
 
 
 
