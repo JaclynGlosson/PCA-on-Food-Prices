@@ -53,6 +53,15 @@ I examine values close to the absolute value of 0.5, as shown above. For PC1, a 
 
 ![](https://github.com/JaclynGlosson/PCA-on-Food-Prices/blob/9a089dfa48068c095f42d3394662bc8b105249b0/images/image58.png)
 
+## Values of the PCs
+By multiplying the food prices in each city by the eigenvectors in the equation Y1=a11\*Bread+a12\*Hamburger+a13\*Butter+a14\*Apples + a15\*Tomato; I calculate the PC for the city in question. In PC1, a high price of Hamburgers and Bread is associated with a low value of PC1. Anchorage had the lowest PC1, meaning it has the highest price of Hamburgers and Bread. Honolulu has the second lowest PC1 value, meaning it has the second highest prices for Hamburgers and Bread. These values correspond exactly to the original data, as both Honolulu and Anchorage have the highest Bread and Hamburger prices in the data. These high prices could be due to the high price of transportation to import hamburgers and bread to these cities. San Diego has the highest PC1 value, meaning it has the lowest prices for Hamburgers and Bread. We can see from the original data that San Diego had the lowest Hamburger price out of all the data, but there were several other cities with lower Bread prices. However when Bread and Hamburger prices are added up for each city, San Diego has the lowest combined value, therefore this is consistent with the data. It should also be noted that when all food prices are added together for each city, San Diego has the second lowest cost (393.7 in total), just after Buffalo (380.7 in total). As the difference in these two is mainly due to the cost of butter in San Diego, including PC2 in my analysis (price of butter) will account for this. In summary, the PC values match what I expect given the data.
+
+For PC2, a high price of Butter is associated with a low value of PC2. Kansas City has the lowest value of PC2, meaning it has the highest price of Butter. This is consistent with the original data, where Kansas City did have the highest butter prices. Buffalo has the highest value of PC1, meaning it has the lowest price of Butter. This is almost consistent with the original data, as Buffalo had the second lowest price of butter after Milwaukee. 
+
+Even though we will not be fully using PC3 in this analysis, it is somewhat helpful to interpret it. For PC3, a high price of Apples is associated with a high value of PC3. Kansas City has the lowest value of PC3, meaning it has the lowest prices of apples. This is close to the original data, however both Buffalo and Detroit had lower apple prices. Milwaukee has the highest value of PC3, meaning it has the highest price of Apples. This is different from the original data, as Anchorage, Chicago, Dallas, Honolulu, and San Fancisco all had higher prices of Apples than Milwaukee.
+
+There are a few discrepancies in the PCs and original data, with most of them being in PC3, which makes sense as it accounts for less variation of the data than PC1 and PC2. 
+
 
 
 
