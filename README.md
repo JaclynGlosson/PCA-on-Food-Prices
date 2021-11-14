@@ -3,14 +3,14 @@
 The objective if this project was to
 
 ### Readme Table of Contents
-* [Exploratory Analysis](...)
-* [Defining the Problem in terms of PCs](.)
-* [Values of the PCs](.)
-* [Variance Estimate Checks](.)
-* [Visual Plots and Interpretation](.)
-* [Use a Regression](.)
-* [Standardize Variables and Repeat Analysis](.)
-* [Use a Regression](.)
+* [Exploratory Analysis](https://github.com/JaclynGlosson/PCA-on-Food-Prices#exploratory-analysis)
+* [Defining the Problem in terms of PCs](https://github.com/JaclynGlosson/PCA-on-Food-Prices#defining-the-problem-in-terms-of-pcs)
+* [Values of the PCs](https://github.com/JaclynGlosson/PCA-on-Food-Prices#values-of-the-pcs)
+* [Variance Estimate Checks](https://github.com/JaclynGlosson/PCA-on-Food-Prices#variance-estimate-checks)
+* [Visual Plots and Interpretation](https://github.com/JaclynGlosson/PCA-on-Food-Prices#visual-plots-and-interpretation)
+* [Use a Regression](https://github.com/JaclynGlosson/PCA-on-Food-Prices#use-a-regression)
+* [Standardize Variables and Repeat Analysis](https://github.com/JaclynGlosson/PCA-on-Food-Prices#standardize-variables-and-repeat-analysis)
+* [Use a Regression](https://github.com/JaclynGlosson/PCA-on-Food-Prices#use-a-regression-1)
 
 ## Exploratory Analysis
 This data provides food prices (in cents) per pound in different US cities in May of 1978. It was collected by the U.S. Department of Labour Bureau of Labor Statistics. There are 24 different cities with 5 different food categories, and there are no missing data. On average, Butter is the most expensive food (mean 144.2), and Bread is the least (Mean 38.44). 
