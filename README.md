@@ -1,6 +1,7 @@
 # Principle Component Analysis on Food Prices
 
-The objective if this project was to
+This was an assignment for STAT 630: Multivariate Analysis, which has been my favorite class in my degree.
+The objective if this project was to complete PCA on food price data from the 70s.
 
 ### Readme Table of Contents
 * [Exploratory Analysis](https://github.com/JaclynGlosson/PCA-on-Food-Prices#exploratory-analysis)
