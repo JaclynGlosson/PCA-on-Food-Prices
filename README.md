@@ -39,6 +39,16 @@ The variance of Hamburgers was the largest in the dataset. As such, I expect tha
 
 ![eigenvectors and values](https://github.com/JaclynGlosson/PCA-on-Food-Prices/blob/512c301d601c381c8a4d79a0de008a7234e10567/images/image20.png)
 
+Note that the columns correspond to the eigenvalues (PC1) and the rows correspond to the eigenvectors for that eigenvalue. Eigenvalues demonstrate the share of importance of the PC relative to the other PCs. The sum of all Eigenvalues is equal to 415.08, the sum of all variances. The first eigenvalue is almost 3 times as big as the second, so <b>the first PC explains three times as much of the variance of the data as the second PC.</b> More specifically, the first eigenvalue explains 52.2% of the data variation (calculated from 216.79/415.08), the second eigenvalue explains 19% of the data variation, and the third explains 14.9% of the data variation. Together, these first three PCs account for 86.1% of the data variation. As this meets my (flexible) 80% threshold for variation explanation, and as I want to explain with as few numbers as possible, I can drop the fourth and fifth components. If this data had a larger amount of observations, I would certainly use all three PCs. However, because this dataset is relatively small and I am trying to explain it in as few PCs as possible, for the analysis in this paper I will focus on the first two PCs, which consist of 61.2% of the data variance.  
+
+<b>PC 1</b>
+For PC1, E12 corresponds with Hamburgers, which had the largest variation. As expected, the absolute value of this eigenvector (-.071) is very large, since we want to magnify the variable with the largest variance on the first PC, which will account for the largest percent of variation. Note that Bread did not have the second highest variance- Butter had the second largest variance. However, Bread and Hamburger had the highest correlation (.649), and therefore the highest covariance. Therefore it makes sense they load together on PC1. Hamburger’s second highest correlation was with Tomato, so it makes sense that Tomatoes have the third highest magnitude in PC1. 
+
+<b>PC 2</b>
+For PC2, we see that Butter’s eigenvalue has the greatest magnitude, since Butter had the second most variation in the dataset. Though Butter’s highest correlations are with Tomato and Bread, the variation of these variables were already captured in PC1. PC2’s second highest magnitude is with Hamburgers, which makes sense because it accounts for most of the variation in the data. Note that Bread and Hamburgers are positive, unlike the other eigenvalues in PC2.
+
+![](https://github.com/JaclynGlosson/PCA-on-Food-Prices/blob/6dc29ae280e876011f4977d80335b55f5162c18b/images/image17.png)
+
 
 
 
