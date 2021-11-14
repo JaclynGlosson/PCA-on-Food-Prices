@@ -49,6 +49,9 @@ For PC2, we see that Butter’s eigenvalue has the greatest magnitude, since But
 
 ![](https://github.com/JaclynGlosson/PCA-on-Food-Prices/blob/6dc29ae280e876011f4977d80335b55f5162c18b/images/image17.png)
 
+I examine values close to the absolute value of 0.5, as shown above. For PC1, a high price of Hamburgers and Bread is associated with a low value of PC1. All values are negative, such that any food value that has a high price will have a low value for PC1. This is akin to a city food price index. For PC2, a high price of Butter is associated with a low value of PC2. For PC3, a high price of Apples is associated with a high value of PC3. Using the formula Y1=a11\*Bread+a12\*Hamburger+a13\*Butter+a14\*Apples + a15\*Tomato, I plug in the eigenvectors for the variable coefficients. The outputs (Y1, Y2,...Y5) for each PC are shown below.
+
+![](https://github.com/JaclynGlosson/PCA-on-Food-Prices/blob/9a089dfa48068c095f42d3394662bc8b105249b0/images/image58.png)
 
 
 
