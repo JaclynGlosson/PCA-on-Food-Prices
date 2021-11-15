@@ -1,7 +1,7 @@
 # Principle Component Analysis on Food Prices
 
 This was an assignment for STAT 630: Multivariate Analysis, which has been my favorite class in my degree.
-The objective if this project was to complete PCA on food price data from the 70s.
+The objective if this project was to complete PCA on U.S. city food price data from the 70s. The final standardized analysis resulted three principle components. A low value of PC1 was associated with a high price of hamburgers and bread, a low value of PC2 was assocated with high prices of apples, and a low value of PC3 was associated with a high price of buttter. Using PCA, the data can be represented in a single graph, allowing quick identificataion of which U.S. cities have outlying prices.
 
 ### Readme Table of Contents
 * [Exploratory Analysis](https://github.com/JaclynGlosson/PCA-on-Food-Prices#exploratory-analysis)
